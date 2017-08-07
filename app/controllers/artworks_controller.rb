@@ -27,4 +27,8 @@ class ArtworksController < ApplicationController
 
   def destroy
   end
+
+  def sum
+    @sum = 1 + 1
+  end
 end
