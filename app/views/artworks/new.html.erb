@@ -1,5 +1,35 @@
-<p>Test Content</p>
-
-
-
-
+<section>
+  <div>
+    <div>
+    <%= form_for(@artwork) do |f| %>
+    <div>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
+    <div>
+      <%= f.label :media_type %>
+      <br>
+      <%= f.select :media_type, [['Paintings','paintings'], ['Drawings', 'drawings']]%>
+    </div>
+    <div>
+      <%= f.label :created %>
+      <br>
+      <%= f.date_select :created %>
+    </div>
+    <div>
+      <%= f.label :description %>
+      <br>
+      <%= f.text_area :description %>
+    </div>
+    <div>
+      <%= f.label :image %>
+      <br>
+      <%= f.file_field :image %>
+    </div>
+    <div style="width: 100px">
+      <%= f.submit %>
+    </div>
+      
+    <% end %>
+  </div>
+</div>

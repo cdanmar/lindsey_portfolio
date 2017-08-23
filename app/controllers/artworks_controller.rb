@@ -1,4 +1,6 @@
 class ArtworksController < ApplicationController
+  before_action :authorize, only: [:new, :edit, :update, :destroy]
+
   def index
     @artworks = Artwork.all
   end
@@ -13,6 +15,7 @@ class ArtworksController < ApplicationController
 
   def create
     @artwork = Artwork.new(artwork_params)
+    @artwork.save
   end
 
   def edit
@@ -28,7 +31,9 @@ class ArtworksController < ApplicationController
   def destroy
   end
 
-  def sum
-    @sum = 1 + 1
+private
+  def artwork_params
+    params.require(:artwork).permit(:title, :media_type, :created, :description, :image)
   end
+
 end
