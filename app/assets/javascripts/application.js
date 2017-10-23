@@ -14,5 +14,11 @@
 //= require jquery 
 //= require bootstrap-sprockets
 //= require turbolinks
+//= require lumos/bootstrap.min
+//= require lumos/classie
+//= require lumos/jquery.min
+//= require lumos/jquery.themepunch.tools.min
+//= require lumos/plugins
+//= require lumos/scripts
 //= require_tree .
 
