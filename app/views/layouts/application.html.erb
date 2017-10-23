@@ -8,15 +8,15 @@
 <link rel="shortcut icon" href="/style/images/favicon.png">
 <title>Lumos</title>
 <!-- Bootstrap core CSS -->
-<link href="/style/css/bootstrap.min.css" rel="stylesheet">
-<link href="/style/css/plugins.css" rel="stylesheet">
-<link href="/style/css/prettify.css" rel="stylesheet">
-<link href="/style.css" rel="stylesheet">
-<link href="/style/css/color/green.css" rel="stylesheet">
+<link href="/assets/lumos/bootstrap.min.css" rel="stylesheet">
+<link href="/assets/lumos/plugins.css" rel="stylesheet">
+<link href="/assets/lumos/prettify.css" rel="stylesheet">
+<link href="/assets/lumos/style.css" rel="stylesheet">
+<link href="/assets/color/green.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,800,700,600,500,300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
-<link href="/style/type/fontello.css" rel="stylesheet">
-<link href="/style/type/budicons.css" rel="stylesheet">
+<link href="/assets/lumos/type/fontello.css" rel="stylesheet">
+<link href="/assets/lumos/type/budicons.css" rel="stylesheet">
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
       <script src="/style/js/html5shiv.js"></script>
@@ -24,7 +24,7 @@
       <![endif]-->
       <%= csrf_meta_tags %>
 
-      
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 <body class="full-layout">
@@ -142,12 +142,12 @@
 
 </div>
 <!-- /.body-wrapper --> 
-<script src="/style/js/jquery.min.js"></script> 
-<script src="/style/js/bootstrap.min.js"></script> 
-<script src="/style/js/jquery.themepunch.tools.min.js"></script> 
-<script src="/style/js/classie.js"></script> 
-<script src="/style/js/plugins.js"></script> 
-<script src="/style/js/scripts.js"></script>  
+<script src="/assets/lumos/jquery.min.js"></script> 
+<script src="/assets/lumos/bootstrap.min.js"></script> 
+<script src="/assets/lumos/jquery.themepunch.tools.min.js"></script> 
+<script src="/assets/lumos/classie.js"></script> 
+<script src="/assets/lumos/plugins.js"></script> 
+<script src="/assets/lumos/scripts.js"></script>  
 <script>
   $.backstretch(["/style/images/art/bg1.jpg"]);
 </script>
